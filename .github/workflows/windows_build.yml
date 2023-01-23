@@ -1,7 +1,10 @@
 name: Windows build
 
-on: [push, pull_request]
-
+on:
+  workflow_dispatch:
+  pull_request:
+      branches:
+      - "**"
 jobs:
   build:
 
